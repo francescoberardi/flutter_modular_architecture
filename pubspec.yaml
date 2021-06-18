@@ -12,21 +12,19 @@ dependencies:
   flutter:
     sdk: flutter
 
-  get_it: ^7.1.3
-  cross_connectivity: ^3.0.3
-  auto_route: ^2.2.0
-
   feature1:
     path: features/feature1
   shared:
     path: core/shared
+  dependencies:
+    path: core/dependencies
 
   cupertino_icons: ^1.0.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  pedantic: ^1.11.0
+  pedantic: ^1.11.1
   auto_route_generator: 2.1.0
   build_runner: ^2.0.4
 
