@@ -14,8 +14,6 @@ scripts:
     run: melos exec -c 1 -- "dart analyze . --fatal-infos"
     description: Run dart analyzer in a specific package.
     select-package:
-      ignore:
-        - "*monorepo*"
 
   test:
     description: Run tests in a specific package.
@@ -27,4 +25,4 @@ scripts:
   format: dart format -o write .
 
 dev_dependencies:
-  pedantic: 1.11.0
+  lints: 1.0.1
