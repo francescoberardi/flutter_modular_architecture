@@ -10,6 +10,7 @@ ide:
     true
 
 scripts:
+
   analyze:
     run: melos exec -c 1 -- "dart analyze . --fatal-infos"
     description: Run dart analyzer in a specific package.
@@ -25,4 +26,4 @@ scripts:
   format: dart format -o write .
 
 dev_dependencies:
-  lints: 1.0.1
+  lints: ^1.0.1
