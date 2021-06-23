@@ -1,23 +1,21 @@
 import 'dart:async';
 
-import 'package:cross_connectivity/cross_connectivity.dart';
 import 'package:get_it/get_it.dart';
 
-import '../../shared.dart';
+import '../network/network_info.dart';
+import '../network/network_info_impl.dart';
+import 'injection_module.dart';
 
+/// Class for handling the dependencies of Shared module
 class SharedInjectionModule implements InjectionModule {
+  /// Default constructor
   SharedInjectionModule(GetIt injector) {
     InjectionModule.injector = injector;
   }
 
   @override
   FutureOr<void> registerDependencies() {
-    //Service
-    InjectionModule.injector.registerLazySingleton<NetworkInfo>(
-        () => NetworkInfoImpl(connectivity: InjectionModule.injector()));
-
-    // External
     InjectionModule.injector
-        .registerLazySingleton<Connectivity>(() => Connectivity());
+        .registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl());
   }
 }

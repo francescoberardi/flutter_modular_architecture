@@ -1,4 +1,4 @@
-import 'package:shared/shared.dart';
+import 'package:auto_route/auto_route.dart';
 
 import '../presentation/pages/feature1_page.dart';
 

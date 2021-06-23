@@ -24,9 +24,9 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  lints: ^1.0.1
   auto_route_generator: 2.1.0
   build_runner: ^2.0.4
-  lints: ^1.0.1
 
 flutter:
   uses-material-design: true

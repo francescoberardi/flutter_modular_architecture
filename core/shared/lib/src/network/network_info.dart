@@ -1,14 +1,5 @@
-import 'package:cross_connectivity/cross_connectivity.dart';
-
+/// Abstract class for network info
 abstract class NetworkInfo {
+  /// Check if device is connected to internet
   Future<bool> get isConnected;
-}
-
-class NetworkInfoImpl implements NetworkInfo {
-  final Connectivity connectivity;
-
-  NetworkInfoImpl({required this.connectivity});
-
-  @override
-  Future<bool> get isConnected => connectivity.checkConnection();
 }
