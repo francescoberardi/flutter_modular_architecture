@@ -1,1 +1,1 @@
-include: ../../analysis_options.yaml
+include: ../../all_lint_rules.yaml

@@ -1,7 +1,1 @@
-include: package:lints/recommended.yaml
-
-linter:
-  rules:
-    - type_annotate_public_apis
-    - public_member_api_docs
-    - package_api_docs
+include: all_lint_rules.yaml

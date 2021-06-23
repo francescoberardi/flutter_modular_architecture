@@ -1,6 +1,5 @@
+/// Extension methods on nullable String
 extension StringExtension on String? {
-  ///
-  /// Extension method for checking empty
-  ///
+  /// Whether the string is null or empty
   bool get isNullOrEmpty => this?.isEmpty ?? true;
 }

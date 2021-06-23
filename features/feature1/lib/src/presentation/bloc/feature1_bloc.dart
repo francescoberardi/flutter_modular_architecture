@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
+import 'package:shared/shared.dart';
 
 import './bloc.dart';
 import '../../domain/usecases/feature1_usecase.dart';
@@ -23,8 +24,8 @@ class Feature1Bloc extends Bloc<Feature1Event, Feature1State> {
     LoadFeature1Entity event,
   ) async* {
     yield Loading();
-    final failureOrEntity = await feature1UseCase(Params());
-    yield failureOrEntity.fold(
+    final failureOrEntity = await feature1UseCase(NoParams());
+    yield failureOrEntity.match(
       (failure) => Error(message: failure.message),
       (entity) => Loaded(feature1entity: entity),
     );

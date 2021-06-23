@@ -27,3 +27,6 @@ scripts:
 
 dev_dependencies:
   lints: ^1.0.1
+  mockito: ^5.0.10
+  build_runner: ^2.0.4
+  auto_route_generator: 2.1.0
