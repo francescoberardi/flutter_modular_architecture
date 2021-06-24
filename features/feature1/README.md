@@ -1,14 +1,11 @@
 # feature1
 
-A new Flutter project.
+This project contains the example of a feature
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+A feature is divided following the clean architecture:
+- Presentation layer: Contains the pages, the local widgets and the state management class (blocs)
+- Domain layer: Contains the use cases, the definition of the repositories and the entities class
+- Data layer: Contains the repository implementations, the data sources and the models classes
+- Module: Contains the class for register the dependencies and the class for register the navigation

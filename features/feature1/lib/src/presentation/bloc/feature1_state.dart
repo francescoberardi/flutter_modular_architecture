@@ -1,8 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:feature1/src/domain/entities/feature1_entity.dart';
-import 'package:meta/meta.dart';
 
-@immutable
+/// Base state class for feature1
 abstract class Feature1State extends Equatable {
   @override
   List<Object> get props => [];

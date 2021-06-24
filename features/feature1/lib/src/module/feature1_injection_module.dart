@@ -9,7 +9,9 @@ import 'package:feature1/src/presentation/bloc/bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared/shared.dart';
 
+/// /// Class for handling the dependencies of Feature1 module
 class Feature1InjectionModule extends InjectionModule {
+  /// Default constructor
   Feature1InjectionModule(GetIt injector) {
     InjectionModule.injector = injector;
   }
