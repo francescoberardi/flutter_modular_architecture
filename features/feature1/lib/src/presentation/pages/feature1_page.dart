@@ -29,10 +29,13 @@ class Feature1BodyPage extends StatelessWidget {
     return BlocBuilder<Feature1Bloc, Feature1State>(
       builder: (context, state) {
         if (state is Empty) {
+          LoggerUtil().info(state);
           return Text('Start loading...');
         } else if (state is Loaded) {
+          LoggerUtil().info(state);
           return Text('Entity loaded');
         } else if (state is Error) {
+          LoggerUtil().error(state);
           return Text(state.message);
         } else {
           return CircularProgressIndicator();

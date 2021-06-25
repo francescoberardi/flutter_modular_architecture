@@ -16,7 +16,7 @@ enum LoggerLevel {
 // then only this class needs to change, while its usages would stay the same
 class LoggerUtil extends AbstractLogger {
 
-  static var logger = Logger();
+  var logger = Logger();
 
   @override
   void setMinimumLoggerLevel(LoggerLevel loggerLevel) {
