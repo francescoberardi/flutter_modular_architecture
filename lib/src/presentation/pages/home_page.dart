@@ -24,6 +24,12 @@ class HomePage extends StatelessWidget {
                 context.router.push(Feature1Route());
               },
             ),
+            ListTile(
+              title: Text('Feature Cubit'),
+              onTap: () {
+                context.router.push(CubitRoute());
+              },
+            ),
           ],
         ),
       ),

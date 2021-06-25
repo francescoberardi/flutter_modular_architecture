@@ -1,0 +1,2 @@
+/// Model class
+class FeatureCubitModel {}

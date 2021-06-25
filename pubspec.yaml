@@ -14,6 +14,8 @@ dependencies:
 
   feature1:
     path: features/feature1
+  feature_cubit:
+    path: features/feature_cubit
   shared:
     path: core/shared
   dependencies:

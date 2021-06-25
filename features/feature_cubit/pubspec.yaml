@@ -1,0 +1,26 @@
+name: feature_cubit
+description: A new Flutter package project.
+publish_to: none
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shared:
+    path: ../../core/shared
+  dependencies:
+    path: ../../core/dependencies
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lints: ^1.0.1
+  mockito: ^5.0.10
+
+flutter:
