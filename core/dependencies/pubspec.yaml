@@ -17,6 +17,7 @@ dependencies:
   fpdart: 0.0.5
   get_it: ^7.1.3
   auto_route: 2.2.0
+  logger: ^1.0.0
 
 dev_dependencies:
   flutter_test:

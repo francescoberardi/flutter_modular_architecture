@@ -6,9 +6,12 @@ import 'package:shared/shared.dart';
 import './bloc.dart';
 import '../../domain/usecases/feature1_usecase.dart';
 
+/// Feature1 Bloc
 class Feature1Bloc extends Bloc<Feature1Event, Feature1State> {
+  /// Feature1 use case property
   final Feature1UseCase feature1UseCase;
 
+  /// Default constructor
   Feature1Bloc({
     required this.feature1UseCase,
   }) : super(Empty());
