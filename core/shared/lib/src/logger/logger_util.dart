@@ -2,21 +2,17 @@ import 'package:logger/logger.dart';
 
 import 'abstract_logger.dart';
 
-enum LoggerLevel {
-  verbose,
-  debug,
-  info,
-  warning,
-  error,
-  fatal,
-}
 
-// Concrete implementation of AbstractLogger using the Logger library
-// Should the logger library change or be replaced,
-// then only this class needs to change, while its usages would stay the same
+/// Concrete implementation of AbstractLogger using the Logger library
+/// Should the logger library change or be replaced,
+/// then only this class needs to change, while its usages would stay the same
 class LoggerUtil extends AbstractLogger {
 
-  var logger = Logger();
+  /// External library member
+  final Logger logger;
+
+  /// Constructor with external library dependency
+  LoggerUtil({required this.logger});
 
   @override
   void setMinimumLoggerLevel(LoggerLevel loggerLevel) {
