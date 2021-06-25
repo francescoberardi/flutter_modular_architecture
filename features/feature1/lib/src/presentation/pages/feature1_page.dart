@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared/shared.dart';
 
+/// Feature1 page
 class Feature1Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -23,6 +24,7 @@ class Feature1Page extends StatelessWidget {
   }
 }
 
+/// Widget that construct the body of Feature1 page
 class Feature1BodyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
