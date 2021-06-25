@@ -1,1 +1,12 @@
 include: all_lint_rules.yaml
+
+analyzer:
+  exclude:
+    - lib/**/*.gr.dart
+
+
+linter:
+  rules:
+    type_annotate_public_apis: false
+    public_member_api_docs: false
+    package_api_docs: false
