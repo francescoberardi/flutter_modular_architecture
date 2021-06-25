@@ -30,11 +30,14 @@ class Feature1BodyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<Feature1Bloc, Feature1State>(
       builder: (context, state) {
+        InjectionModule.injector<AbstractLogger>().info("current state: $state");
+
         if (state is Empty) {
           return Text('Start loading...');
         } else if (state is Loaded) {
           return Text('Entity loaded');
         } else if (state is Error) {
+          InjectionModule.injector<AbstractLogger>().error("current state: $state");
           return Text(state.message);
         } else {
           return CircularProgressIndicator();
