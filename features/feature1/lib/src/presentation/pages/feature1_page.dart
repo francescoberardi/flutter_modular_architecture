@@ -28,14 +28,14 @@ class Feature1BodyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<Feature1Bloc, Feature1State>(
       builder: (context, state) {
+        LoggerUtil().info("current state: $state");
+
         if (state is Empty) {
-          LoggerUtil().info(state);
           return Text('Start loading...');
         } else if (state is Loaded) {
-          LoggerUtil().info(state);
           return Text('Entity loaded');
         } else if (state is Error) {
-          LoggerUtil().error(state);
+          LoggerUtil().error(state.message);
           return Text(state.message);
         } else {
           return CircularProgressIndicator();
