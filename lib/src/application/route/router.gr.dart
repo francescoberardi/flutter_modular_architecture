@@ -6,6 +6,7 @@
 
 import 'package:auto_route/auto_route.dart' as _i1;
 import 'package:feature1/feature1.dart' as _i4;
+import 'package:feature_cubit/src/presentation/pages/cubit_page.dart' as _i5;
 import 'package:flutter/material.dart' as _i2;
 
 import '../../presentation/pages/home_page.dart' as _i3;
@@ -25,6 +26,11 @@ class AppRouter extends _i1.RootStackRouter {
         routeData: routeData,
         builder: (_) {
           return _i4.Feature1Page();
+        }),
+    CubitRoute.name: (routeData) => _i1.MaterialPageX<dynamic>(
+        routeData: routeData,
+        builder: (_) {
+          return _i5.CubitPage();
         })
   };
 
@@ -32,6 +38,7 @@ class AppRouter extends _i1.RootStackRouter {
   List<_i1.RouteConfig> get routes => [
         _i1.RouteConfig(HomeRoute.name, path: '/'),
         _i1.RouteConfig(Feature1Route.name, path: '/feature1'),
+        _i1.RouteConfig(CubitRoute.name, path: '/feature1'),
         _i1.RouteConfig('*#redirect',
             path: '*', redirectTo: '/', fullMatch: true)
       ];
@@ -47,4 +54,10 @@ class Feature1Route extends _i1.PageRouteInfo {
   const Feature1Route() : super(name, path: '/feature1');
 
   static const String name = 'Feature1Route';
+}
+
+class CubitRoute extends _i1.PageRouteInfo {
+  const CubitRoute() : super(name, path: '/feature1');
+
+  static const String name = 'CubitRoute';
 }
