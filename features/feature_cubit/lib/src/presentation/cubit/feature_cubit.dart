@@ -1,8 +1,10 @@
 import 'package:bloc/bloc.dart';
-import 'package:feature_cubit/src/domain/entities/feature_cubit_entity.dart';
+import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
-import 'package:feature_cubit/src/domain/usecases/feature_cubit_usecases.dart';
 import 'package:shared/shared.dart';
+
+import 'package:feature_cubit/src/domain/entities/feature_cubit_entity.dart';
+import 'package:feature_cubit/src/domain/usecases/feature_cubit_usecases.dart';
 
 part 'feature_state.dart';
 

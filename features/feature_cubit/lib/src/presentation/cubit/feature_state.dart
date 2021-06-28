@@ -2,12 +2,15 @@ part of 'feature_cubit.dart';
 
 /// Define abstract class for states of feature_cubit
 @immutable
-abstract class FeatureCubitState {}
+abstract class FeatureCubitState extends Equatable {
+  @override
+  List<Object> get props => [];
+}
 
 /// Initial state
 class FeatureCubitInitial extends FeatureCubitState {}
 
-/// Loading data state
+/// Loading state
 class FeatureCubitLoading extends FeatureCubitState {}
 
 /// Loaded data state
@@ -20,7 +23,7 @@ class FeatureCubitLoaded extends FeatureCubitState {
   List<Object> get props => [featureCubitEntity];
 }
 
-/// Change some data state in UI
+/// Change some data state
 class FeatureCubitChangeData extends FeatureCubitState {}
 
 /// Error state
